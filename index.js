@@ -17,7 +17,7 @@ const monitors = [new Monitor({
     responseTime: 1000 //in ms
   }),
   new Monitor({
-    website: 'https://google.com',
+    website: 'https://web-monitor.rifatno1.repl.co',
     interval: 1, //minutes
     responseTime: 1000 //in ms
   })
