@@ -13,12 +13,12 @@ http.createServer(function (req, res) {
 
 const monitors = [new Monitor({
     website: `https://Test-Bot.rifatno1.repl.co`,
-    interval: 1, //minutes
+    interval: 2, //minutes
     responseTime: 1000 //in ms
   }),
   new Monitor({
     website: 'https://web-monitor.rifatno1.repl.co',
-    interval: 1, //minutes
+    interval: 2, //minutes
     responseTime: 1000 //in ms
   })
 ]
