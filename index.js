@@ -23,12 +23,19 @@ const monitors = [new Monitor({
   })
 ]
 monitors.forEach(function (el) {
-  el.on('error', function (error) {
-    console.log('error has occured');
+  el.on('error', function () {
+    console.log('Error has occured in ' + el.website);
     el.stop();
   });
-  el.on('stop', function (website) {
+  el.on('stop', function () {
     console.log(el.website + `'s` + ' monitor has stopped.');
+  })
+  el.on('timeout', function () {
+    console.log(el.website + 'timed out. Restarting');
+    el.restart();
+  })
+  el.on('restart', function () {
+    console.log(el.website + 'monitoring restarted.');
   })
 })
 
