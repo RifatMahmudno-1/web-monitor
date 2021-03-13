@@ -2,7 +2,7 @@ const http = require('http');
 const Monitor = require('ping-monitor');
 
 
-const port = 3000;
+const port = 4000;
 http.createServer(function (req, res) {
   res.writeHead(200, {
     'Content-Type': 'text/html'
@@ -12,7 +12,7 @@ http.createServer(function (req, res) {
 }).listen(port);
 
 const monitors = [new Monitor({
-    website: `https://Test-Bot.rifatno1.repl.co`,
+    website: `https://test-bot.rifatno1.repl.co/`,
     interval: 2, //minutes
     responseTime: 1000 //in ms
   }),
