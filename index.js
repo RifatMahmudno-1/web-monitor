@@ -1,7 +1,6 @@
 const http = require('http');
 const Monitor = require('ping-monitor');
 
-
 const port = 4000;
 http.createServer(function (req, res) {
   res.writeHead(200, {
