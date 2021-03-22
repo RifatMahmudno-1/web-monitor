@@ -14,7 +14,7 @@ module.exports = function () {
                         clearInterval(int);
                         Resout();
                     })
-            }, 180000); //3min interval
+            }, 120000); //3min interval
         }
 
         function Resout() {

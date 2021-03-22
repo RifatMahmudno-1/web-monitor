@@ -3,12 +3,12 @@ module.exports = function () {
 
   const monitors = [new Monitor({
       website: `https://test-bot.rifatno1.repl.co/`,
-      interval: 3, //minutes
+      interval: 2, //minutes
       responseTime: 1000 //in ms
     }),
     new Monitor({
       website: 'https://web-monitor.rifatno1.repl.co',
-      interval: 3, //minutes
+      interval: 2, //minutes
       responseTime: 1000 //in ms
     })
   ]
