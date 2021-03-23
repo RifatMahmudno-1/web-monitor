@@ -18,4 +18,4 @@ Fetch()
 
 
 //start ping
-//Ping()
+Ping()
