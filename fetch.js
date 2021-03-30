@@ -1,6 +1,6 @@
 module.exports = function () {
     const fetch = require('node-fetch')
-    const websites = [`https://gamy-mercury-sound.glitch.me/`]
+    //const websites = [`Your website's link`]
     websites.forEach(function (el) {
         let call = 0
         setInt()
