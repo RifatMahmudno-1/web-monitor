@@ -2,7 +2,7 @@ module.exports = function () {
   const Monitor = require('ping-monitor');
 
   const monitors = [
-    new Monitor({
+    /*new Monitor({
       website: 'https://www.google.com',//replace with your own webite link
       interval: 2, //minutes
       responseTime: 1000 //in ms
@@ -13,6 +13,7 @@ module.exports = function () {
       responseTime: 1000 //in ms
     })
     //You can add more websites in this array
+    */
   ]
 
   monitors.forEach(function (el) {
