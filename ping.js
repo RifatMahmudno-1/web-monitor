@@ -1,16 +1,18 @@
 module.exports = function () {
   const Monitor = require('ping-monitor');
 
-  const monitors = [new Monitor({
-      website: `https://test-bot.rifatno1.repl.co/`,
+  const monitors = [
+    new Monitor({
+      website: 'https://www.google.com',//replace with your own webite link
       interval: 2, //minutes
       responseTime: 1000 //in ms
     }),
     new Monitor({
-      website: 'https://web-monitor.rifatno1.repl.co',
+      website: 'https://www.bing.com',//replace with your own webite link
       interval: 2, //minutes
       responseTime: 1000 //in ms
     })
+    //You can add more websites in this array
   ]
 
   monitors.forEach(function (el) {
